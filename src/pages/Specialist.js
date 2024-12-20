@@ -1,11 +1,9 @@
-import React from 'react'
+import React from 'react';
+import Card from "../components/reusable/Card"
 
 function Specialist() {
-
-    console.log("Specialist page loaded");
-    
   return (
-    <div>aewt4erw</div>
+    <div><Card/></div>
   )
 }
 
