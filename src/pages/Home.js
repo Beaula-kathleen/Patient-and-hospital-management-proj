@@ -1,10 +1,11 @@
 import React from "react";
-import { Link } from "react-router";
+import NavBar from "../components/reusable/NavBar";
 
 function Home() {
-  return <div>Home
-     <Link to="/testing">← Go to demo</Link>
-  </div>;
+  return <>
+    <NavBar/>
+     {/* <Link to="/testing">← Go to demo</Link> */}
+  </>;
 }
 
 export default Home;

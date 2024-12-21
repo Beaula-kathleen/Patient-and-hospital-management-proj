@@ -195,7 +195,7 @@ img {
     grid-template-columns: repeat(3, 1fr);
   }
   .card__img {
-    width: 348px;
+    width: 90%;
   }
   .card__data {
     width: 316px;

@@ -1,11 +1,24 @@
 import React from "react";
 import "../../styles/cardModules.css";
 
-function Card() {
+function Card({ data }) {
   return (
     <div>
       <div class="card__container">
-        <article class="card__article">
+        {data.map((ele, index) => (
+          <article class="card__article" id={index}>
+            <img src={ele.img} alt="image" class="card__img" />
+
+            <div class="card__data">
+              <span class="card__description">{ele.dep}</span>
+              <h2 class="card__title">{ele.name}</h2>
+              <a href="#" class="card__button">
+                Read More
+              </a>
+            </div>
+          </article>
+        ))}
+        {/* <article class="card__article">
           <img src="assets/img/landscape-1.png" alt="image" class="card__img" />
 
           <div class="card__data">
@@ -15,31 +28,7 @@ function Card() {
               Read More
             </a>
           </div>
-        </article>
-
-        <article class="card__article">
-          <img src="assets/img/landscape-2.png" alt="image" class="card__img" />
-
-          <div class="card__data">
-            <span class="card__description">Poon Hill, Nepal</span>
-            <h2 class="card__title">Starry Night</h2>
-            <a href="#" class="card__button">
-              Read More
-            </a>
-          </div>
-        </article>
-
-        <article class="card__article">
-          <img src="assets/img/landscape-3.png" alt="image" class="card__img" />
-
-          <div class="card__data">
-            <span class="card__description">Bojcin Forest, Serbia</span>
-            <h2 class="card__title">Path Of Peace</h2>
-            <a href="#" class="card__button">
-              Read More
-            </a>
-          </div>
-        </article>
+        </article> */}
       </div>
     </div>
   );
