@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { content } from "../constant/specialty";
-import "../styles/specialty.css";
+import "../styles/specialty.modules.css";
 
 function Specialty() {
   const [items, setItems] = useState(content);
