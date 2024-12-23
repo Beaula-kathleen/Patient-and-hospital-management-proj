@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+// import NavBar from "../components/reusable/NavBar";
+import Banner from "../components/Banner";
+
 
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <>
+      {/* <NavBar /> */}
+      <Banner />
+      {/* <Link to="/testing">← Go to demo</Link> */}
+    </>
+  );
 }
 
-export default Home
+export default Home;

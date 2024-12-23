@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { content } from "../constant/specialty";
-import "../styles/specialty.css";
+import "../styles/specialty.modules.css";
 
 function Specialty() {
   const [items, setItems] = useState(content);
@@ -18,11 +18,21 @@ function Specialty() {
       return [last, ...rest];
     });
   };
+  const handleClick = (index) => {
+    setItems((prev) => {
+      const first = items[index-1];
+      const middle = items.slice(index , items.length);
+      const last = items.slice(0, index-1);
+      return [first, ...middle, ...last];
+    });
+  };
 
   return (
     <div>
       <div class="container">
         <div class="slide">
+          {console.log(items)
+          }
           {items.map((item, index) => (
             <>
               <div
@@ -31,6 +41,7 @@ function Specialty() {
                 style={{
                   backgroundImage: `url(${item.background})`,
                 }}
+                onClick={() => handleClick(index)}
               >
                 <div class="content">
                   <div class="name">{item.name}</div>

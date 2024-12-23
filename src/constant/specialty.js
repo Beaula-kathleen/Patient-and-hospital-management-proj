@@ -1,37 +1,44 @@
+import cardiology from "../asserts/specialtyImg/cardiology.png";
+import gastroenterology from "../asserts/specialtyImg/gastroenterology.jpg";
+import hematology from "../asserts/specialtyImg/hematology.jpg";
+import neuro from "../asserts/specialtyImg/neuro.jpg";
+import orthopaedic from "../asserts/specialtyImg/orthopaedic.jpg";
+import pulmonology from "../asserts/specialtyImg/Pulmonology.jpg";
+
 export const content = [
   {
-    background: "https://i.ibb.co/jrRb11q/img2.jpg",
-    name: "A",
+    background: cardiology,
+    name: "Cardiology",
     des: ` Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
                 eum!`,
   },
   {
-    background: "https://i.ibb.co/NSwVv8D/img3.jpg",
-    name: "B",
+    background: gastroenterology,
+    name: "Gastroenterology",
     des: ` Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
                 eum!`,
   },
   {
-    background: "https://i.ibb.co/qCkd9jS/img4.jpg",
-    name: "C",
+    background: hematology,
+    name: "Haematology",
     des: ` Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
                 eum!`,
   },
   {
-    background: "https://i.ibb.co/jrRb11q/img2.jpg",
-    name: "A1",
+    background: orthopaedic,
+    name: "Orthopaedics",
     des: ` Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
                 eum!`,
   },
   {
-    background: "https://i.ibb.co/NSwVv8D/img3.jpg",
-    name: "B1",
+    background: pulmonology,
+    name: "Pulmonology",
     des: ` Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
                 eum!`,
   },
   {
-    background: "https://i.ibb.co/qCkd9jS/img4.jpg",
-    name: "C1",
+    background: neuro,
+    name: "Neurologist",
     des: ` Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
                 eum!`,
   },
