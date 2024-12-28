@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/loginAndSignupModules.css";
 import { BUTTON_LABEL1, HEADER_LABEL1, HEADER_LABEL2, HEADER_LABEL3, HEADER_LABEL4, HEADER_LABEL5, HEADER_LABEL6, INPUT_LABEL1, INPUT_LABEL2, INPUT_LABEL3 } from "../constant/loginAndSignupConstant";
-import "../styles/loginAndSignup.modules.css"
+import "../styles/loginAndSignup.module.css"
 
 function LoginAndSignin() {
   const [active, setActive] = useState(false);

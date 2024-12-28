@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +7,7 @@ body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(to right, #89f7fe, #66a6ff);
     color: #333;
-}
+} */
 header {
     background-color: #007bff;
     padding: 1rem;

@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../styles/Admin/emeregencyResourceAllocation.modules.css"
+import "../../styles/Admin/emergencyResourceAllocation.module.css"
 function EmergencyResourceAllocation() {
     // function searchResource() {
     //     const input = document.getElementById("searchInput").value.toUpperCase();

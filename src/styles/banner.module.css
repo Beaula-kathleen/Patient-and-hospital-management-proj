@@ -1,9 +1,3 @@
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 img {
   max-inline-size: 100%;
 }
@@ -137,4 +131,24 @@ h1 {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+@media (max-width: 1440px){
+  .collage{
+    max-width: 600px;
+  }
+}
+@media (max-width: 1024px){
+  .collage{
+    max-width: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .bannerContainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .collage{
+     max-width:800px;
+    margin-inline: 0;
+  }
 }

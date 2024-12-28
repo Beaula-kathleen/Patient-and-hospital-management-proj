@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from "../components/reusable/Card"
 import { doctors } from '../constant/specialist';
-import "../styles/specialist.modules.css"
+import "../styles/specialist.module.css"
 
 function Specialist() {
   return (

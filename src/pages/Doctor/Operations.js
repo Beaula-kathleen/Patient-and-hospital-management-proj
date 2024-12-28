@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../styles/Doctor/operation.modules.css";
+import "../../styles/Doctor/operation.module.css";
 
 function Operations() {
     // function addNewScheduleRow() {
