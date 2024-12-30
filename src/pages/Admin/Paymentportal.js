@@ -19,7 +19,7 @@ function Paymentportal() {
         // });
 
   return (
-    <div><div class="container mt-5">
+    <><div class="container mt-5">
     <h2 class="text-center">Admin Payment Collection Portal</h2>
     <div class="card mt-4">
         <div class="card-body">
@@ -52,7 +52,7 @@ function Paymentportal() {
         </div>
     </div>
 </div>
-</div>
+</>
   )
 }
 
