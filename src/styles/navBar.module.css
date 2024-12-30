@@ -80,6 +80,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+nav{
+  display: flex;
+  align-items: center;
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {

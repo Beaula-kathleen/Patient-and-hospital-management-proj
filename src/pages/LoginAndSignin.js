@@ -1,49 +1,69 @@
 import React, { useState } from "react";
 import "../styles/loginAndSignupModules.css";
-import { BUTTON_LABEL1, HEADER_LABEL1, HEADER_LABEL2, HEADER_LABEL3, HEADER_LABEL4, HEADER_LABEL5, HEADER_LABEL6, INPUT_LABEL1, INPUT_LABEL2, INPUT_LABEL3 } from "../constant/loginAndSignupConstant";
-import "../styles/loginAndSignup.module.css"
+import {
+  BUTTON_LABEL1,
+  HEADER_LABEL1,
+  HEADER_LABEL2,
+  HEADER_LABEL3,
+  HEADER_LABEL4,
+  HEADER_LABEL5,
+  HEADER_LABEL6,
+  INPUT_LABEL1,
+  INPUT_LABEL2,
+  INPUT_LABEL3,
+} from "../constant/loginAndSignupConstant";
+import style from "../styles/loginAndSignin.module.css";
 
 function LoginAndSignin() {
   const [active, setActive] = useState(false);
 
   return (
     <div>
-      <div class={`wrapper ${active ? "active" : ""}`}>
-        <span class="rotate-bg"></span>
-        <span class="rotate-bg2"></span>
+      <div className={`${active ? style.wrapper.active : style.wrapper}`}>
+        <span className={style.rotate_bg}></span>
+        <span className={style.rotate_bg2}></span>
 
-        <div class="form-box login">
+        <div className={style.form_box.login}>
           ,
-          <h2 class="title animation" style={{ "--i": 0, "--j": 21 }}>
+          <h2 className={style.title.animation} style={{ "--i": 0, "--j": 21 }}>
             {HEADER_LABEL1}
           </h2>
           <form action="#">
-            <div class="input-box animation" style={{ "--i": 1, "--j": 22 }}>
+            <div
+              className={style.input_box.animation}
+              style={{ "--i": 1, "--j": 22 }}
+            >
               <input type="text" required />
               <label for="">{INPUT_LABEL1}</label>
-              <i class="bx bxs-user"></i>
+              <i className="bx bxs-user"></i>
             </div>
 
-            <div class="input-box animation" style={{ "--i": 2, "--j": 23 }}>
+            <div
+              className={style.input_box.animation}
+              style={{ "--i": 2, "--j": 23 }}
+            >
               <input type="password" required />
-              <label for="">{ INPUT_LABEL2}</label>
-              <i class="bx bxs-lock-alt"></i>
+              <label for="">{INPUT_LABEL2}</label>
+              <i className="bx bxs-lock-alt"></i>
             </div>
 
             <button
               type="submit"
-              class="btn animation"
+              className={style.btn.animation}
               style={{ "--i": 3, "--j": 24 }}
             >
               {BUTTON_LABEL1}
             </button>
 
-            <div class="linkTxt animation" style={{ "--i": 5, "--j": 25 }}>
+            <div
+              className={style.linkTxt.animation}
+              style={{ "--i": 5, "--j": 25 }}
+            >
               <p>
-                {HEADER_LABEL6}{" "}
+                {HEADER_LABEL6}
                 <a
                   href="#"
-                  class="register-link"
+                  className={style.register_link}
                   onClick={() => {
                     setActive(!active);
                   }}
@@ -55,53 +75,65 @@ function LoginAndSignin() {
           </form>
         </div>
 
-        <div class="info-text login">
-          <h2 class="animation" style={{ "--i": 0, " --j": 20 }}>
+        <div className={style.info_text.login}>
+          <h2 className={style.animation} style={{ "--i": 0, " --j": 20 }}>
             {HEADER_LABEL2}
           </h2>
-          <p class="animation" style={{ "--i": 1, "--j": 21 }}>
+          <p className={style.animation} style={{ "--i": 1, "--j": 21 }}>
             {HEADER_LABEL3}
           </p>
         </div>
 
-        <div class="form-box register">
-          <h2 class="title animation" style={{ "--i": 17, "--j": 0 }}>
-           {HEADER_LABEL4}
+        <div className={style.form_box.register}>
+          <h2 className={style.title.animation} style={{ "--i": 17, "--j": 0 }}>
+            {HEADER_LABEL4}
           </h2>
 
           <form action="#">
-            <div class="input-box animation" style={{ "--i": 18, "--j": 1 }}>
+            <div
+              className={style.input_box.animation}
+              style={{ "--i": 18, "--j": 1 }}
+            >
               <input type="text" required />
               <label for="">{INPUT_LABEL1}</label>
-              <i class="bx bxs-user"></i>
+              <i className={style.bx.bxs_user}></i>
             </div>
 
-            <div class="input-box animation" style={{ "--i": 19, "--j": 2 }}>
+            <div
+              className={style.input_box.animation}
+              style={{ "--i": 19, "--j": 2 }}
+            >
               <input type="email" required />
               <label for="">{INPUT_LABEL3}</label>
-              <i class="bx bxs-envelope"></i>
+              <i className={style.bx.bxs_envelope}></i>
             </div>
 
-            <div class="input-box animation" style={{ "--i": 20, "--j": 3 }}>
+            <div
+              className={style.input_box.animation}
+              style={{ "--i": 20, "--j": 3 }}
+            >
               <input type="password" required />
               <label for="">{INPUT_LABEL2}</label>
-              <i class="bx bxs-lock-alt"></i>
+              <i className={style.bx.bxs_lock_alt}></i>
             </div>
 
             <button
               type="submit"
-              class="btn animation"
+              className={style.btn.animation}
               style={{ "--i": 21, "--j": 4 }}
             >
               {HEADER_LABEL4}
             </button>
 
-            <div class="linkTxt animation" style={{ "--i": 22, "--j": 5 }}>
+            <div
+              className={style.linkTxt.animation}
+              style={{ "--i": 22, "--j": 5 }}
+            >
               <p>
                 {HEADER_LABEL5}{" "}
                 <a
                   href="#"
-                  class="login-link"
+                  className={style.login_link}
                   onClick={() => {
                     setActive(!active);
                   }}
@@ -113,12 +145,12 @@ function LoginAndSignin() {
           </form>
         </div>
 
-        <div class="info-text register">
-          <h2 class="animation" style={{ "--i": 17, "--j": 0 }}>
-           {HEADER_LABEL2}
+        <div className={style.info_text.register}>
+          <h2 className={style.animation} style={{ "--i": 17, "--j": 0 }}>
+            {HEADER_LABEL2}
           </h2>
-          <p class="animation" style={{ "--i": 18, "--j": 1 }}>
-           {HEADER_LABEL3}
+          <p className={style.animation} style={{ "--i": 18, "--j": 1 }}>
+            {HEADER_LABEL3}
           </p>
         </div>
       </div>

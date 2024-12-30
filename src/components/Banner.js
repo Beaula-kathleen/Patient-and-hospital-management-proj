@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/banner.module.css";
+import styles from "../styles/banner.module.css"
 import {
   BANNERCONTENT1,
   BANNERCONTENT2,
@@ -9,10 +9,10 @@ import {
 
 function Banner() {
   return (
-    <div className="bannerContainer">
+    <div className={styles.bannerContainer}>
       <h1>CSS Grid - Photo Collage</h1>
 
-      <section className="collage">
+      <section className={styles.collage}>
         {BANNERCONTENT1.map((ele, index) => (
           <div id={index}>
             <img src={ele} alt="Alt text for the image" />

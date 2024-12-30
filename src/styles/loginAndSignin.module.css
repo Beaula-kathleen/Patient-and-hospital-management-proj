@@ -3,7 +3,7 @@
 :root{
     --white: #fff;
     --black: #000; 
-    --lightBulue: #17a;
+    --lightBlue: #17a;
 }
 /* 
 *{
@@ -32,7 +32,7 @@ body{
 }
 
 
-.wrapper .form-box{
+.wrapper .form_box{
     position: absolute;
     top: 0;
     width: 50%;
@@ -42,12 +42,12 @@ body{
     flex-direction: column;
 }
 
-.wrapper .form-box.login{
+.wrapper .form_box.login{
     left: 0;
     padding: 0 60px 0 40px;
 }
 
-.form-box h2{
+.form_box h2{
     margin-bottom: 10px;
     position: relative;
     font-size: 32px;
@@ -55,7 +55,7 @@ body{
     text-align: center;
 }
 
-.form-box h2::after{
+.form_box h2::after{
     content: "";
     position: absolute;
     bottom: -10px;
@@ -66,14 +66,14 @@ body{
     background: var(--black);
 }
 
-.form-box .input-box{
+.form_box .input_box{
     position: relative;
     width: 100%;
     height: 50px;
     margin: 25px 0;
 }
 
-.input-box input{
+.input_box input{
     width: 100%;
     height: 100%;
     background: transparent;
@@ -87,12 +87,12 @@ body{
     padding-right: 23px;
 }
 
-.input-box input:focus,
-.input-box input:valid{
-    border-bottom-color: var(--lightBulue);
+.input_box input:focus,
+.input_box input:valid{
+    border-bottom-color: var(--lightBlue);
 }
 
-.input-box label{
+.input_box label{
     position: absolute;
     top: 50%;
     left: 0;
@@ -104,14 +104,14 @@ body{
 }
 
 
-.input-box input:focus~label,
-.input-box input:valid~label{
+.input_box input:focus~label,
+.input_box input:valid~label{
     top: -5px;
-    color: var(--lightBulue);
+    color: var(--lightBlue);
 }
 
 
-.input-box i{
+.input_box i{
     position: absolute;
     top: 50%;
     right: 0;
@@ -120,9 +120,9 @@ body{
     transition: 0.5s;
 }
 
-.input-box input:focus~i,
-.input-box input:valid~i{
-    color: var(--lightBulue);
+.input_box input:focus~i,
+.input_box input:valid~i{
+    color: var(--lightBlue);
 }
 
 form button{
@@ -156,7 +156,7 @@ form .linkTxt{
     font-weight: 600;
 }
 
-.wrapper .form-box.login .animation{
+.wrapper .form_box.login .animation{
     transform: translateX(0);
     transition: 0.7s ease;
     opacity: 1;
@@ -165,7 +165,7 @@ form .linkTxt{
 }
 
 
-.wrapper.active .form-box.login .animation{
+.wrapper.active .form_box.login .animation{
     transform: translateX(-120%);
     opacity: 0;
     filter: blur(10px);
@@ -177,7 +177,7 @@ form .linkTxt{
 
 
 
-.wrapper .info-text{
+.wrapper .info_text{
     position: absolute;
     top: 0;
     width: 50%;
@@ -187,34 +187,34 @@ form .linkTxt{
     justify-content: center;
 }
 
-.wrapper .info-text.login{
+.wrapper .info_text.login{
     right: 0;
     text-align: right;
     padding: 0 40px 60px 150px;
 
 }
 
-.wrapper .info-text h2{
+.wrapper .info_text h2{
     font-size: 36px;
     color: var(--white);
     line-height: 1.3;
     text-transform: uppercase;
 }
 
-.wrapper .info-text p{
+.wrapper .info_text p{
     font-size: 16px;
     color: var(--white);
 }
 
 
-.wrapper .info-text.login .animation{
+.wrapper .info_text.login .animation{
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);
     transition: 0.7s ease;
     transition-delay: calc(.1s * var(--j));
 }
-.wrapper.active .info-text.login .animation{
+.wrapper.active .info_text.login .animation{
     transform: translateX(120px);
     opacity: 0;
     filter: blur(10px);
@@ -226,7 +226,7 @@ form .linkTxt{
 
 
 
-.wrapper .rotate-bg{
+.wrapper .rotate_bg{
     position: absolute;
     top: -4px;
     right: 0;
@@ -239,32 +239,22 @@ form .linkTxt{
     transition-delay: 1.6s;
 }
 
-.wrapper.active .rotate-bg{
+.wrapper.active .rotate_bg{
     transform: rotate(0) skewY(0);
     transition-delay: 0.5s;
 }
 
-
-
-
-
-
-
-
-
-
-
-.wrapper .form-box.register{
+.wrapper .form_box.register{
     padding: 0 40px 0 60px;
     right: 0;
 }
 
-.wrapper.active .form-box.register{
+.wrapper.active .form_box.register{
     pointer-events: auto;
 }
 
 
-.wrapper .form-box.register .animation{
+.wrapper .form_box.register .animation{
     transform: translateX(120%);
     opacity: 0;
     filter: blur(10px);
@@ -272,7 +262,7 @@ form .linkTxt{
     transition-delay: calc(.1s * var(--j));
 }
 
-.wrapper.active .form-box.register .animation{
+.wrapper.active .form_box.register .animation{
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);
@@ -281,19 +271,19 @@ form .linkTxt{
 
 
 
-.wrapper .info-text.register{
+.wrapper .info_text.register{
     left: 0;
     text-align: left;
     padding: 0 150px 60px 40px;
     pointer-events: none;
 }
 
-.wrapper.active .info-text.register{
+.wrapper.active .info_text.register{
     pointer-events: auto;
 }
 
 
-.wrapper .info-text.register .animation{
+.wrapper .info_text.register .animation{
     transform: translateX(-120%);
     opacity: 0;
     filter: blur(10px);
@@ -301,17 +291,14 @@ form .linkTxt{
     transition-delay: calc(.1s * var(--j));
 }
 
-.wrapper.active .info-text.register .animation{
+.wrapper.active .info_text.register .animation{
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);
     transition-delay: calc(.1s * var(--i));
 }
 
-
-
-
-.wrapper .rotate-bg2{
+.wrapper .rotate_bg2{
     position: absolute;
     top: 100%;
     left: 250px;
@@ -324,7 +311,7 @@ form .linkTxt{
     transition-delay: 0.5s;
 }
 
-.wrapper.active .rotate-bg2{
+.wrapper.active .rotate_bg2{
     transform: rotate(-11deg) skewY(-40deg);
     transition-delay: 1.2s;
 }

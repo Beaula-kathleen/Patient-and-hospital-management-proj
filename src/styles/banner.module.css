@@ -127,28 +127,29 @@ h1 {
   grid-area: twelve;
 }
 
-.bannerContainer{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.bannerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 4%;
 }
-@media (max-width: 1440px){
-  .collage{
+@media (max-width: 1440px) {
+  .collage {
     max-width: 600px;
   }
 }
-@media (max-width: 1024px){
-  .collage{
+@media (max-width: 1024px) {
+  .collage {
     max-width: 500px;
   }
 }
 @media (max-width: 768px) {
-  .bannerContainer{
+  .bannerContainer {
     display: flex;
     flex-direction: column;
   }
-  .collage{
-     max-width:800px;
+  .collage {
+    max-width: 800px;
     margin-inline: 0;
   }
 }
