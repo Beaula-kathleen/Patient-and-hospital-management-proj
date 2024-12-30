@@ -8,7 +8,7 @@ import LoginAndSignin from "../pages/LoginAndSignin";
 export const routeItems = [
   { path: "/", element: <Home /> },
   { path: "/specialty", element: <Specialty /> },
-  { path: "/LoginAndSignin", element: <LoginAndSignin /> },
+  { path: "/loginAndSignin", element: <LoginAndSignin /> },
   {
     path: "/spec",
     element: <Specialist />,

@@ -5,7 +5,7 @@
     --black: #000; 
     --lightBlue: #17a;
 }
-/* 
+
 *{
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-} */
+}
 
 .wrapper{
     position: relative;

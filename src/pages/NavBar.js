@@ -8,14 +8,14 @@ function NavBar() {
     <>
       <header className={style.header} id="header">
         <nav className={style.nav.container}>
-          <a href="#" className={style.nav__logo}>
+          <a href="/" className={style.nav__logo}>
             Logo
           </a>
 
           <div className={style.nav__menu} id="nav-menu">
             <ul className={style.nav__list}>
               <li className={style.nav__item}>
-                <a href="#" className={style.nav__link}>
+                <a href="/" className={style.nav__link}>
                   Home
                 </a>
               </li>
@@ -46,7 +46,7 @@ function NavBar() {
 
               <li>
                 <a href="#" className={style.nav__link}>
-                  <Link to={"LoginAndSignin"}>
+                  <Link to={"loginAndSignin"} className={style.nav__link}>
                     <i
                       className="ri-user-line nav__login"
                       id="login-btn"
