@@ -83,6 +83,7 @@ img {
 nav{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -212,7 +213,7 @@ nav{
 }
 
 /* Show menu */
-.show-menu {
+.show_menu {
   top: 0;
 }
 

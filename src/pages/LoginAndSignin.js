@@ -17,7 +17,7 @@ function LoginAndSignin() {
   const [active, setActive] = useState(false);
 
   return (
-    <>
+    <div className={style.loginContainer}>
       <div className={`${active ? style.active : ""} ${style.wrapper}`}>
         <span className={style.rotate_bg}></span>
         <span className={style.rotate_bg2}></span>
@@ -159,7 +159,7 @@ function LoginAndSignin() {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
