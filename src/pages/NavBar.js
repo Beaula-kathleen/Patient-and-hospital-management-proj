@@ -14,8 +14,18 @@ function NavBar() {
 
           <div
             className={`${style.nav__menu} ${toggleMenu && style.show_menu}`}
-            id={style.nav_menu}
+            // id={style.nav_menu}
           >
+            {/* <!-- Close button --> */}
+            <div
+              class={`${style.nav__close}`}
+              onClick={() => {
+                setToggleMenu(!toggleMenu);
+              }}
+              id="nav-close"
+            >
+              <i class="ri-close-line"></i>
+            </div>
             <ul className={style.nav__list}>
               <li className={style.nav__item}>
                 <a href="/" className={style.nav__link}>
@@ -48,30 +58,30 @@ function NavBar() {
               </li>
 
               <li>
-                <a className={style.nav__link}>
-                  <Link to={"loginAndSignin"} className={style.nav__link}>
-                    <i
-                      className="ri-user-line nav__login"
-                      id="login-btn"
-                      style={{
-                        borderRadius: "50%",
-                        border: "2px solid",
-                        padding: "2%",
-                      }}
-                    ></i>
-                    &nbsp;Login
-                  </Link>
+                <a href="/loginAndSignin" className={style.nav__link}>
+                  {/* <Link to={"loginAndSignin"} className={style.nav__link}> */}
+                    {!toggleMenu && (
+                      <>
+                        <i
+                          className="ri-user-line nav__login"
+                          id="login-btn"
+                          style={{
+                            borderRadius: "50%",
+                            border: "2px solid",
+                            padding: "2%",
+                          }}
+                        ></i>
+                        &nbsp;
+                      </>
+                    )}
+                    Login
+                  {/* </Link> */}
                 </a>
               </li>
             </ul>
-
-            {/* <!-- Close button -->
-               <div class="nav__close" id="nav-close">
-                  <i class="ri-close-line"></i>
-               </div> */}
           </div>
 
-          <div class={style.nav__actions}>
+          <div class={`${style.nav__actions} ${style.nav__link}`}>
             {/* <!-- Search button --> */}
             {/* <i class="ri-search-line nav__search" id="search-btn"></i> */}
 

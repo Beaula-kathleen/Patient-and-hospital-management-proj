@@ -160,7 +160,7 @@ nav{
 }
 
 .nav__actions {
-  display: flex;
+  display: none;
   align-items: center;
   column-gap: 1rem;
 }
@@ -370,8 +370,14 @@ nav{
     max-width: 400px;
     margin-inline: auto;
   }
-}
 
+}
+@media screen and (max-width: 1023px) {
+   .nav__actions{
+    display: flex;
+  }
+  
+}
 /* For large devices */
 @media screen and (min-width: 1023px) {
   .nav {
@@ -393,6 +399,8 @@ nav{
   .login__form {
     padding: 3rem 2rem 3.5rem;
   }
+ 
+ 
 }
 
 @media screen and (min-width: 1150px) {
