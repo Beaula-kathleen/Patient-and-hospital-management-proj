@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Specialist from "../pages/Specialist";
 import Specialty from "../pages/Specialty";
 import LoginAndSignin from "../pages/LoginAndSignin";
+import Dravailability from "../pages/Admin/Dravailability";
 
 export const routeItems = [
   { path: "/", element: <Home /> },
@@ -15,4 +16,6 @@ export const routeItems = [
   },
   { path: "/Doctor/operation", element: <Operations /> },
   { path: "/Admin/Emergency", element: <EmergencyResourceAllocation /> },
+  { path: "/Admin/Dravailability", element: <Dravailability/> },
+  { path: "/Admin/Payement", element: <Payment/>}
 ];
