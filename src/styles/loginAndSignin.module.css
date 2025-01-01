@@ -299,3 +299,39 @@ form .linkTxt {
   transform: rotate(-11deg) skewY(-40deg);
   transition-delay: 1.2s;
 }
+
+@media (max-width: 1024px) {
+  .info_text,
+  .rotate_bg,
+  .form_container,
+  .form_container {
+    display: none !important;
+  }
+  .noContainer {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .info_text,
+  .rotate_bg,
+  .form_container,
+  .form_container {
+    display: none !important;
+  }
+  .noContainer {
+    width: 100% !important ;
+  }
+}
+
+@media (max-width: 480px) {
+  .info_text,
+  .rotate_bg,
+  .form_container,
+  .form_container {
+    display: none !important;
+  }
+  .noContainer {
+    width: 100% !important ;
+  }
+}

@@ -22,7 +22,11 @@ function LoginAndSignin() {
         <span className={style.rotate_bg}></span>
         <span className={style.rotate_bg2}></span>
 
-        <div className={`${style.form_box} ${style.login}`}>
+        <div
+          className={`${style.form_box} ${style.login} ${
+            active ? style.form_container : style.noContainer
+          } `}
+        >
           ,
           <h2
             className={`${style.title} ${style.animation}`}
@@ -32,7 +36,7 @@ function LoginAndSignin() {
           </h2>
           <form>
             <div
-              className={`${style.input_box} ${style.animation}`}
+              className={`${style.input_box} ${style.animation} `}
               style={{ "--i": 1, "--j": 22 }}
             >
               <input type="text" required />
@@ -54,7 +58,7 @@ function LoginAndSignin() {
               className={`${style.btn} ${style.animation}`}
               style={{ "--i": 3, "--j": 24 }}
             >
-              {BUTTON_LABEL1}
+              {HEADER_LABEL1}
             </button>
 
             <div
@@ -63,13 +67,15 @@ function LoginAndSignin() {
             >
               <p>
                 {HEADER_LABEL6}
+
                 <a
-                  // href="#"
                   className={style.register_link}
                   onClick={() => {
+                    console.log("HOOO");
                     setActive(!active);
                   }}
                 >
+                  &nbsp;
                   {HEADER_LABEL4}
                 </a>
               </p>
@@ -86,7 +92,11 @@ function LoginAndSignin() {
           </p>
         </div>
 
-        <div className={`${style.form_box} ${style.register}`}>
+        <div
+          className={`${style.form_box} ${style.register}  ${
+            !active ? style.form_container : style.noContainer
+          }`}
+        >
           <h2
             className={`${style.title} ${style.animation}`}
             style={{ "--i": 17, "--j": 0 }}
@@ -96,7 +106,7 @@ function LoginAndSignin() {
 
           <form>
             <div
-              className={`${style.input_box} ${style.animation}`}
+              className={`${style.input_box} ${style.animation} `}
               style={{ "--i": 18, "--j": 1 }}
             >
               <input type="text" required />
@@ -113,15 +123,6 @@ function LoginAndSignin() {
               <i className={"bx bxs_envelope"}></i>
             </div>
 
-            <div
-              className={`${style.input_box.animation} ${style.animation}`}
-              style={{ "--i": 20, "--j": 3 }}
-            >
-              <input type="password" required />
-              <label for="">{INPUT_LABEL2}</label>
-              <i className={"bx bxs_lock_alt"}></i>
-            </div>
-
             <button
               type="submit"
               className={`${style.btn} ${style.animation}`}
@@ -135,7 +136,7 @@ function LoginAndSignin() {
               style={{ "--i": 22, "--j": 5 }}
             >
               <p>
-                {HEADER_LABEL5}{" "}
+                {HEADER_LABEL5}
                 <a
                   // href="#"
                   className={style.login_link}
@@ -150,7 +151,7 @@ function LoginAndSignin() {
           </form>
         </div>
 
-        <div className={`${style.info_text} ${style.register}`}>
+        <div className={`${style.info_text} ${style.register} `}>
           <h2 className={style.animation} style={{ "--i": 17, "--j": 0 }}>
             {HEADER_LABEL2}
           </h2>
